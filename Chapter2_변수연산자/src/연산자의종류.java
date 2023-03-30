@@ -158,7 +158,7 @@ public class 연산자의종류 {
 		System.out.println(a);
 		
 		System.out.println(10/3);
-		System.out.println(10/3.0);
+		
 //		byte b = 10;
 //		char c = 'A';
 //		int a = b+c;
