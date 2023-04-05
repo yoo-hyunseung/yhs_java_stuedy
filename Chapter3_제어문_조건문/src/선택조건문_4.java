@@ -25,8 +25,8 @@ public class 선택조건문_4 {
 //				}
 //			}
 //			runtime.exec("open" + " /Applications/Google Chrome.app"+"https://youtube.com/embed/BBdC1rl5sKY");
-			Runtime.getRuntime().exec("open /Applications/Safari.app/"+" https://youtube.com/embed/BBdC1rl5sKY");//맥 터미널 명령어를 알아야 함
-//			Runtime.getRuntime().exec("open -a \"Google Chrome\"");
+			Runtime.getRuntime().exec("open /Applications/Google Chrome.app/"+" https://youtube.com/embed/BBdC1rl5sKY");//맥 터미널 명령어를 알아야 함
+//			Runtime.getRuntime().exec("open -a \"Google Chrome.app\"");
 			
 		}catch(Exception ex) {
 		}
