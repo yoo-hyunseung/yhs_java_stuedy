@@ -22,7 +22,7 @@ class News{
 	String regdate;
 	String author;
 }
-class Category{
+class Categorys{
 //	int no;
 	String pic;
 	String title;
@@ -50,7 +50,7 @@ class Recipe{
 	int star; // 평점
 	int hit; // 조회수
 }
-class Music{
+class Musics{
 	int rank;
 	String poster;
 	String singer;
