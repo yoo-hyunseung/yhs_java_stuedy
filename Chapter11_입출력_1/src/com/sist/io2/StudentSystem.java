@@ -9,14 +9,19 @@ public class StudentSystem {
 		FileReader fr = null; // 초기화를 해줘야함 null 
 		try {
 			fr =  new FileReader("/Users/yuhyeonseung/Desktop/sist/java_datas/school.txt");
-			fr.read
 			StringBuffer sb = new StringBuffer();
 			int i = 0;// 문자 받기
 			while((i = fr.read()) != -1) {
 				sb.append((char)i);
 			}
+			System.out.println(sb);
 			// 1|홍길동|90|90|90|270|90.0\n
-			String[] stds = sb.toString().split("\n");
+//			String[] stds = sb.toString().split("%n");
+			StringTokenizer st1 = new StringTokenizer(sb.toString(), "\n");
+			String[] stds = new String[st1.countTokens()];
+			for(int j =0 ; j< stds.length;j++) {
+				stds[j] = st1.nextToken();
+			}
 			// 학생별 구분
 
 			for(String ss : stds) {
