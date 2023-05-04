@@ -27,16 +27,26 @@ public class MusicSystem {
 		}
 	}
 	
-	public void musicCategoriData(int cno) {
+	public List<GenieMusicVO> musicCategoriData(int cno) {
+		List<GenieMusicVO> mList =
+				new ArrayList<>();
 		for(GenieMusicVO vo : list) {
 			if(vo.getCno()==cno) {
 				System.out.println(vo.getNo()+" "+vo.getTitle());
+				mList.add(vo);
 			}
-			
-			
 		}
+		return mList;
 	}
-	
+	public List<GenieMusicVO> musicFindData(String title){
+		List<GenieMusicVO> mList = new ArrayList<>();
+		for(GenieMusicVO vo : list) {
+			if(vo.getTitle().contains(title)) {
+				mList.add(vo);
+			}
+		}
+		return mList;
+	}
 	public static void main(String[] args) {
 		MusicSystem ms = new MusicSystem();
 		try {
